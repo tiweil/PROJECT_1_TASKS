@@ -1,0 +1,94 @@
+body{
+    text-align: center;
+    background-image: url(../images/tile.jpg);
+}
+.title{
+    font-family: forte;
+    size: 60%;
+    
+}
+.taskData{
+    background-image: url(../images/formbg.jpg);
+    padding :30px;
+    width: 40%;
+    position: relative;
+    margin-left: 30%;
+}
+#mission{
+    width:40%;
+    height:70px;
+}
+#dateMission{
+    width:25%;
+}
+#timeMission{
+    width:17%;
+}
+#myTasks{
+    padding-left: 150px;
+    padding-top: 80px;
+    /* display:flex; */
+    /*animation: fadeInAnimation ease 4s;*/
+    
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    }
+.addDiv{
+    position: relative;
+    /*font-weight: 200;*/
+    background-repeat:no-repeat;background-image:url(../images/notebg.png);
+    height: 250px;
+    width: 190px;
+    float:left;
+    margin:30px;
+    padding:20px 20px 10px 10px;
+    font-size: 18px;
+    font-family:Cascadia Code;
+    font-style: normal;
+    text-align: left;
+    /*animation: fadeInAnimation ease 4s;*/
+}
+.addNewDiv{
+    animation: fadeInAnimation ease 4s;
+   /* margin: -20px;*/
+}
+.textArea{
+    height: 160px;
+    width: 160px;
+    margin-top: 20px;
+    font-size: 18px;
+    position: relative;
+    /*overflow: auto;*/
+    overflow-y: scroll; /* Add the ability to scroll */
+}
+/*.textArea::-webkit-scrollbar {
+    display: none;
+}*/
+.dateTime{
+    text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+    position:block;
+    bottom:20px;
+}
+.iconX{
+    position: relative;
+    float: right;
+    opacity: 0;
+    display:block;
+    font-size: 15px;
+    cursor: pointer;
+}
+.addDiv:hover .iconX {
+    /*background-color: beige;*/
+    opacity: 1;
+    }
+#messageBox{
+    color: red;
+}
